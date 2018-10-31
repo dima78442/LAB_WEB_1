@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "TimesNewRoman";
+    background: url(../images/background.JPG) no-repeat fixed;
+    background-size: 100%;
+}
+
+a{
+    margin-left: 30px;
+    border: 2px solid black;
+    background: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+a:hover{
+    color:#1be3e3;
+    cursor: pointer;
+}
+
+.page2{
+    text-align: center;
+    margin-top: 40px;
+    text-transform:uppercase;
+    color: black;
+    font-family: serif;
+}
