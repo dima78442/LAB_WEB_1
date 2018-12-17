@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Dodyak </title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script
+    </head>
+    <body>
+		<script>
+	var over_module = (function(){
+	var hints = ["bio", "bio hint", "include", "include hint", "new-word", "new-hint"];
+	function search(word){
+		for(var i = 0; i < hints.length; i += 2)
+			if (word === hints[i]) return hints[i + 1];
+		return "no hint";
+	}
+	function add(){
+			var elems = document.querySelectorAll('.word');
+			for (var i = 0; i < elems.length; i++){
+				var div;
+				elems[i].addEventListener("mouseover",
+				(function(e){
+                                        var ref = e.target;
+                                        div = document.createElement('div');
+					var rect = ref.getBoundingClientRect();
+					div.className = 'hint';
+					div.innerHTML = search(ref.innerHTML);
+					div.style.left = rect.right + 'px';
+					div.style.top = rect.top - 20 + 'px';
+					document.body.appendChild(div);
+					//window.setTimeout((function(){document.body.removeChild(div)}), 1000);
+				}));
+				elems[i].addEventListener("mouseout",
+                                (function(){document.body.removeChild(div);}));
+			}
+		}
+	return {
+            publicMethod: add
+            }
+}());
+over_module.publicMethod();
+
+	</script>
+	
+    <div id="container">
+        
+        <div id="topbar">
+            <div id="header">
+                <center>
+					<br/> <br/> <br/> <br/> <br/> 
+                  <h1>Анджей Сапковський</h1>
+                </center>
+            </div>
+           
+        </div>
+
+                <div id="photo">
+                    <center> <img src="images/sapk.jpg" width="70%"></center>
+                </div>
+
+            <div id="content">
+                <p>
+                <b> А́нджей Сапко́вський </b> (пол. Andrzej Sapkowski, 21 червня 1948, Лодзь, Польща) — польський письменник-фантаст і публіцист. Українською мовою твори Сапковського виходили у видавництвах «Клубом сімейного дозвілля» (серія «Відьмак»), Зелений пес ("Трилогія гуситська") та у журналі «Всесвіт».
+					Книги автора перекладено на англійську, болгарську, естонську, іспанську, італійську, китайську, корейську, литовську, нідерландську, німецьку, португальську, російську, сербську, словацьку, угорську, українську, фінську, французьку, чеську, шведську та японську мови. В самій лише Польщі продано близько 2 млн примірників його книг.
+				</p>
+				<center>
+                <h3><b>Короткі біографічні відомості</b></h3>
+				</center>
+                <p>
+				Народився 1948 році в місті <a href="#" class="word">Лодзь</a>, де й закінчив університет, факультет зовнішньої торгівлі. З 1972 по 1994 рік працював у торгівлі.
+
+				1986 року написав фентезійну новелу «Відьмак» (пол. Wiedźmin), у якій створив свого головного героя — відьмака Геральта із Рівії, майстра меча й магії, котрий за гроші вбиває монстрів і різноманітних міфічних створінь в своєму фентезійному світі. Перші чотири оповідання про відьмака були видані в збірці «Відьмак».
+
+				1990 року вийшла друга книга письменника, що складалася із семи оповідань (як нових, так і тих, що були видані раніше) під одним загальним заголовком «Останнє бажання», яка була перевидана 1993 року. 1992 року Сапковський видав нову книгу про відьмака — «Меч призначення», куди увійшли ще шість новел (перевидана у 1994 році).
+
+				З 1994 по 1999 рр. створив п'ятитомну сагу про Відьмака та Відьмачку, яка принесла йому світове визнання: «Кров ельфів» (1994), «Час презирства» (1995), «Хрещення вогнем» (1996), «Вежа ластівки» (1997) і «Володарка озера» (1999).
+
+				<a class="word">Пригоди Відьмака</a> також були видані у вигляді шести коміксів (1993—1995) оформлених малюнками Богуслава Польха і з текстом Матея Паровського. Крім того, у 2001 році польською телестудією Heritage Films був знятий 13-серійний телесеріал «Відьмак» («Wiedzmin») за мотивами збірок про Геральта «Меч призначення» і «Останнє бажання» (режисер Марек Бродскі). На основі серіалу також був створений 130-хвилинний телефільм. У 2004 році компанія «<a href="#" class="word">CD Project</a>» почала роботу над багатообіцяючою RPG під назвою «Відьмак» («The Witcher»), гра вийшла 24 жовтня 2007 року. 17 травня 2011 року виходить продовження гри про пригоди Геральта під назвою «Відьмак 2: Вбивці королів» («The Witcher 2: Assassins of Kings»), а 18 травня 2015 року — третя частина гри («The Witcher 3: Wild Hunt»).
+
+				Сапковский — автор сюжету книги-гри «Око Іррдеса» (польск. Oko Yrrhedesa), дуже популярної у Польщі.
+
+				У 1995 році була видана книга «Світ короля Артура» — есе — в котрому автор намагався розібратися у причинах популярності легенд про короля Артура серед сучасних читачів і про вплив цих легенд на творчість деяких авторів XX-го століття. Книга включає також новелу «Maladie» — власну варіацію за мотивами легенди про Трістана та Ізольду.
+
+				У 2001 році вийшла велика праця про міфологічних істот — «Rękopis znaleziony w Smoczej Jaskini» (Бестіарій), в якій з притаманним автору почуттям гумору відкривається світ створінь, що населяють наш світ і світи письменників фентезі.
+
+				Серед заслуг автора також велика кількість критичних статей про фентезі і для тих, хто ним захоплюється, таких як «Посібник для початкових письменників фентезі», «Вареник, або немає золота в сірих горах» (стаття про сучасні проблеми фентезі, як літератури), «Меч, магія, екран» (про екранізації) і багато інших.
+
+				Він вже закінчив роботу над своєю другою саґою — «Трилогією про Рейневана» («Вежа блазнів», «Божі воїни», «Вічне світло», в якій ідеться про середньовічну Європу і Гуситські війни.
+
+				5 січня 2009 року була презентована нова книга письменника — «Змія», дії якої відбуваються під час війни в Афганістані.
+
+				27 вересня 2010 Анджей Сапковський розповів, що працює над новою книгою у світі «Відьмака», вихід нової книги у серії очікувався у 2013—2014 році. У 2013 вийшов новий роман у серії «Відьмак» Сезон гроз (пол. Sezon burz).
+			</p>
+                   <script>
+					var arr = ["Лодзь", "Лодзь - місто", "CD Project", "CD Project - компанія", "Пригоди Відьмака", "Пригоди Відьмака - легендарна сага"];
+						
+						
+						$(".clickable").click(function(e){
+						 s = window.getSelection();
+						 var range = s.getRangeAt(0);
+						 var node = s.anchorNode;
+						 while(range.toString().indexOf(' ') != 0) {                 
+							range.setStart(node,(range.startOffset -1));
+						 }
+						 range.setStart(node, range.startOffset +1);
+						 do{
+						   range.setEnd(node,range.endOffset + 1);
+
+						}while(range.toString().indexOf(' ') == -1 && range.toString().trim() != '');
+						var str = range.toString().trim();
+						alert(str);
+						arr.push(str);
+					   });
+			
+						 var my_module = (function(){
+
+					function search(word){
+						for(var i = 0; i < arr.length; i += 2) {
+							if (word === arr[i]){
+								return arr[i + 1];
+							} 
+						}
+					}
+					
+					function toast(e){
+					 var ref = e.target;
+				                    div = document.createElement('div');
+									var rect = ref.getBoundingClientRect();
+									div.className = 'hint';
+									div.innerHTML = search(ref.innerHTML);
+									div.style.left = rect.right + 'px';
+									div.style.top = rect.top - 20 + window.pageYOffset + 'px'
+									document.body.appendChild(div);
+					}
+					
+					function add() { 
+							var el = document.querySelectorAll('.word');
+							for (var i = 0; i < el.length; i++) {
+								var div;
+								el[i].addEventListener("mouseover", (function(e) {
+				                    var ref = e.target;
+				                    div = document.createElement('div');
+									var rect = ref.getBoundingClientRect();
+									div.className = 'hint';
+									div.innerHTML = search(ref.innerHTML);
+									div.style.left = rect.right + 'px';
+									div.style.top = rect.top - 20 + window.pageYOffset + 'px'
+									document.body.appendChild(div);
+
+								}));
+								el[i].addEventListener("mouseout",
+				                                (function(){document.body.removeChild(div);}));
+							}
+					}
+					return {
+				            publicMethod: add
+				    }
+					}());
+
+					    my_module.publicMethod();
+					     
+				</script>    
+            </div>
+			<div class="ad clearfix">
+                <div id="book">
+					<center>
+					<a href="https://www.bookclub.ua/ukr/authorbooks/?recr_free160&utm_expid=10040872-88.d2DTN9PdR6q7k-PWM0MV7Q.2&aid=221&utm_referrer=https%3A%2F%2Fwww.bookclub.ua%2Fukr%2Fcatalog%2Fbooks%2Ffantasy_books%2Fproduct.html%3Frecr_free160%26id%3D37390"> <img src="images/book.jpg" width="35%" ></a>
+					<br/> 
+                    <a href="https://www.bookclub.ua/ukr/authorbooks/?recr_free160&utm_expid=10040872-88.d2DTN9PdR6q7k-PWM0MV7Q.2&aid=221&utm_referrer=https%3A%2F%2Fwww.bookclub.ua%2Fukr%2Fcatalog%2Fbooks%2Ffantasy_books%2Fproduct.html%3Frecr_free160%26id%3D37390"><h2>Придбати книги А.Сапковського </h2></a>
+					</center>	
+				</div>
+            
+				<div id="game"> 
+			
+                <center>
+				<a href="https://store.steampowered.com/bundle/727/The_Witcher_Trilogy/"> <img src="images/game.jpg" width="55%" "></a>
+				<br/> 
+                <a href="https://store.steampowered.com/bundle/727/The_Witcher_Trilogy/"><h2>Придбати ігри про А.Сапковського </h2></a>
+				</center>
+              
+				</div>
+		
+            </div>
+			
+			<div class="footer">
+					<center>
+					<h2><b>&#169 Created by Dodyak Dmytro, KV-62</b></h2>
+                    </center>
+                </div>
+        
+            
+    </div>
+
+    </body>
+
+</html>

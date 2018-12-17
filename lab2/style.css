@@ -1,0 +1,157 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #BBC4CD;
+	background-image:url("images/78.jpg");
+	background-position:left center;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    box-shadow: #0000FF 0.1em 0.1em 0.3em;
+    background-color: #B6B6B6;
+	background-image:url("images/bg2.jpg");
+	opacity:1;
+    
+}
+
+
+#topbar {
+    display: flex;
+    margin-top: 10px;
+	background-image:url("images/back.jpg");
+	background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position:left top;
+	opacity:1;
+
+}
+
+#photo{
+	display: block;
+	background-image:url("images/bg2.jpg");
+}
+
+#nav {
+	width: 50%;
+}
+
+#header {
+    width: 50%;
+}
+.ad a{
+	padding-bottom:100px;
+	margin-bottom:25px;
+}
+#book {
+    width: 50%;
+	float: left;
+}
+
+#game {
+    width: 50%;
+	float: right;
+}
+#content {
+    text-indent: 1.0em;
+    margin-left: 10px;
+	
+	
+}
+
+#sections {
+    height: 90%;
+    float: right;
+}
+
+#photo {
+	background-color: #B6B6B6;
+    
+}
+.footer{
+	margin-top:15px;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+#mainlist {
+	background-color:#FFFFFF;
+	color:#333;
+	padding:10px;
+	margin:15px;
+	border: 7px solid #2F3841;
+	border-radius: 100px;
+	opacity:0.5;
+	box-shadow: 3px 3px 7px;
+}
+a{
+	text-decoration:none
+}
+#mainlist:hover{
+	opacity:1;
+	border: 11px solid #2F3841;
+}
+a:link, a:visited  {
+	color: #744411;
+}
+
+a:hover, a:active {
+	color: #333;
+}
+
+@font-face {
+font-family: "SeymourOne-Regular"; 
+src: url("../fonts/SeymourOne-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display&subset=cyrillic,latin-ext');
+
+h1{
+font-family: 'Ruslan Display', cursive;
+font-size: 32pt;
+font-variant: small-caps
+}
+
+p{
+font-size: 16pt;
+}
+
+h3{
+font-size: 24pt;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=cyrillic,cyrillic-ext');
+
+li{
+	font-family: 'Comfortaa', cursive;
+	font-size: 12pt;
+}
+
+.p1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+#p2 {
+  text-align: center;
+}
+
+.hint {
+	position: absolute;
+	border: 1px solid orange;
+	background-color: orange;
+	border-radius: 30px 40px;
+}
+
+
+
+    
